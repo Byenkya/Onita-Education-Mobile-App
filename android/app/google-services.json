@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "723083836011",
+    "firebase_url": "https://onita-pr17.firebaseio.com",
+    "project_id": "onita-pr17",
+    "storage_bucket": "onita-pr17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723083836011:android:c91126f35f8076e8e3cf2e",
+        "android_client_info": {
+          "package_name": "app.onita.onita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723083836011-civr3nkl3fptfiof62goae6v27r9rg7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq4Y1E5afYfIHmvREREezUr6R5cu_AuJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723083836011-civr3nkl3fptfiof62goae6v27r9rg7e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723083836011:android:a54b54de0c427858e3cf2e",
+        "android_client_info": {
+          "package_name": "com.siniaonita.onita_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723083836011-civr3nkl3fptfiof62goae6v27r9rg7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq4Y1E5afYfIHmvREREezUr6R5cu_AuJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723083836011-civr3nkl3fptfiof62goae6v27r9rg7e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
