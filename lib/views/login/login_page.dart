@@ -31,6 +31,7 @@ class _LoginState extends State<Login> {
         child: DefaultTabController(
             length: 2,
             child: Scaffold(
+              resizeToAvoidBottomInset : false,
               appBar: AppBar(
                 backgroundColor: Colors.redAccent,
                 automaticallyImplyLeading: false,

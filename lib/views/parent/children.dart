@@ -33,6 +33,14 @@ class _ChildrenState extends State<Children> {
               itemBuilder: (BuildContext context) =>
               <PopupMenuEntry<String>>[
                 PopupMenuItem(
+                  value: "supervisor", child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    FlatButton.icon(onPressed: (){print('supervisor');}, icon: Icon(Icons.accessibility), label: Text('Add supervisor'))
+                  ],
+                ),
+                ),
+                PopupMenuItem(
                   value: "Logout", child: Text('Logout'),
                 )
               ],
@@ -64,16 +72,19 @@ class _ChildrenState extends State<Children> {
 
           }
       ),
-      floatingActionButton: IconButton(
-        icon: Icon(Icons.person_add),
-        onPressed: (){
-          showDialog(
-              context: context,
-              builder: (BuildContext context){
-                return AddChild(document);
-              }
-          );
-        },
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: IconButton(
+          icon: Icon(Icons.person_add, color: Colors.redAccent, size: 50,),
+          onPressed: (){
+            showDialog(
+                context: context,
+                builder: (BuildContext context){
+                  return AddChild(document);
+                }
+            );
+          },
+        ),
       ),
     );
   }
