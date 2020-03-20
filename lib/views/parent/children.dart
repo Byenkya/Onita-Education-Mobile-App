@@ -28,16 +28,14 @@ class _ChildrenState extends State<Children> {
         ),
         centerTitle: true,
           actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.person_add),
-              onPressed: (){
-                showDialog(
-                    context: context,
-                  builder: (BuildContext context){
-                      return AddChild(document);
-                  }
-                );
-              },
+            PopupMenuButton(
+              onSelected: (String result){ print(result);},
+              itemBuilder: (BuildContext context) =>
+              <PopupMenuEntry<String>>[
+                PopupMenuItem(
+                  value: "Logout", child: Text('Logout'),
+                )
+              ],
             )
           ]
 
@@ -65,6 +63,17 @@ class _ChildrenState extends State<Children> {
 
 
           }
+      ),
+      floatingActionButton: IconButton(
+        icon: Icon(Icons.person_add),
+        onPressed: (){
+          showDialog(
+              context: context,
+              builder: (BuildContext context){
+                return AddChild(document);
+              }
+          );
+        },
       ),
     );
   }
